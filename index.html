@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arthur | Portifólio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+<div class="balls"></div>
+<nav class="nav-bar">
+    <ul class="menu-nav-bar">
+        <li>
+            <a href="#home" class="menu-link">Início</a>
+        </li>
+        <li>
+            <a href="#projects" class="menu-link">Projetos</a>
+        </li>
+        <li>
+            <a href="#about" class="menu-link">Sobre</a>
+        </li>
+        <li>
+            <a href="#contacts" class="menu-link">Contato</a>
+        </li>
+    </ul>
+</nav>
+
+<main id="home" class="header">
+    <h1>João Arthur</h1>
+    <p class="header-p typing"></p>
+    <div class="header-social-icons">
+        <a target="_blank" href="https://github.com/Arthur-olive"
+        ><i class="fa-brands fa-github"></i
+        ></a>
+        <a target="_blank" href="https://www.linkedin.com/in/jo%C3%A3o-arthur-135835237/"
+        ><i class="fa-brands fa-linkedin"></i
+        ></a>
+    </div>
+</main>
+
+<section id="projects" class="projects">
+    <h2 class="projects-title">Meus Projetos</h2>
+    <div class="projects-box">
+        <div class="projects-card">
+            <img
+                    class="projects-img"
+                    src="img/APPLE.png"
+                    alt="Projeto clone da Apple Store" />
+            <div class="projects-text-box">
+                <h3 class="projects-info">Apple Store</h3>
+                <p class="projects-p">
+                    Clone da Apple Store, feito com objetivo de aplicar funcionalidades do
+                    JavaScript
+                </p>
+            </div>
+        </div>
+        <div class="projects-card">
+            <img class="projects-img" src="img/TABUADA.png" alt="Projeto de um tabuada" />
+            <div class="projects-text-box">
+                <h3 class="projects-info">Tabuada</h3>
+                <p class="projects-p">
+                    Projeto de uma tabuada utilizando apenas JavaScript puro, HTML e CSS
+                </p>
+            </div>
+        </div>
+        <div class="projects-card">
+            <img
+                    class="projects-img"
+                    src="img/QRCODE.png"
+                    alt="Projeto gerador de QR Code" />
+            <div class="projects-text-box">
+                <h3 class="projects-info">QR Code generator</h3>
+                <p class="projects-p">
+                    Projeto feito utilizando HTML, CSS, JavaScript e uma API de QR Code
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2 class="about-title">Sobre Mim</h2>
+    <div class="about-box">
+        <p class="about-p">
+            Olá! Meu nome é João Arthur de Oliveira Pereira, sou graduando em Engenharia da
+            Computação e atuo como desenvolvedor front-end. Tenho como foco a criação de
+            experiências web modernas, funcionais e intuitivas, sempre alinhando tecnologia
+            e design para entregar soluções que realmente fazem a diferença.
+        </p>
+        <br />
+        <p class="about-p">
+            Meu estilo combina o minimalismo com o design contemporâneo, resultando em
+            interfaces que não apenas funcionam de forma eficiente, mas também proporcionam
+            uma experiência visual marcante e envolvente. Busco constantemente aprimorar
+            minhas habilidades e acompanhar as tendências do setor para desenvolver projetos
+            que unam qualidade, inovação e impacto.
+        </p>
+    </div>
+</section>
+
+<section id="contacts" class="contacts">
+    <h2 class="contacts-title">Entre em contato</h2>
+    <form class="contacts-form" id="form-contacts" onsubmit="sendMsg(event)">
+        <div class="form-group">
+            <input placeholder="Nome" class="form-camp-contact" id="name" />
+        </div>
+        <div class="form-group">
+                    <textarea
+                            placeholder="Digite sua mensagem"
+                            class="form-camp-contact"
+                            rows="6"
+                            id="message"></textarea>
+        </div>
+        <button type="submit" class="btn-form">Enviar Whatsapp</button>
+    </form>
+</section>
+</body>
+</html>
